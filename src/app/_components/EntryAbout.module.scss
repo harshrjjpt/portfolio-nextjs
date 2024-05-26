@@ -1,0 +1,92 @@
+.aboutSection {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  padding: 20px;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+
+  h1 {
+    color: black;
+  }
+  p{
+    margin-left: 12px;
+    margin-top: 12px;
+    color: #3d3d3dbe;
+    max-width: 780px;
+  }
+  .left {
+    margin-left: 10%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .right {
+    flex: 1;
+    .skillsContainer {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      .marquee {
+        position: absolute;
+        top: -19px;
+        left: 0px;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+      }
+    }
+  }
+}
+.heroHeading {
+  color: rgb(1, 1, 1);
+  position: relative;
+  z-index: 1;
+  font-family: "Heebo", sans-serif;
+  color: #fcfaf3;
+  font-size: 35px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 800;
+  text-shadow: 2px 0 #fff;
+}
+.split {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  display: inline-block;
+  font-family: "Heebo", sans-serif;
+  color: #fff;
+  font-size: 92px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: left;
+  max-width: 780px;
+  @media screen and (max-width: 1000px) {
+    font-size: 75px;
+    line-height: 71px;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 54px;
+    line-height: 44px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 24px;
+  }
+  
+}
+.scrollBackground {
+  background-color: #e9edc9;
+  // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  // filter: grayscale(100%);
+  // background-image: url(https://media.discordapp.net/attachments/1158719716374888483/1231330655305203823/53396161677_d407c11bfa_k.jpg?ex=66369109&is=66241c09&hm=05af284f18e92dc2cbf0f974da7a8436dbb007fe85988eb9cee7d0f0cbc5ba81&=&format=webp&width=960&height=640);
+  transition: 0.8s all ease-in-out;
+  position: relative;
+  z-index: 11;
+}
+.scrollText {
+  color: #001219;
+  transition: 0.5s all ease-in-out;
+}

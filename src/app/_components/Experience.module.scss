@@ -1,0 +1,93 @@
+.experienceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Heebo", sans-serif;
+  z-index: 11;
+  position: relative;
+  background-color: #000000;
+  padding-top: 140px;
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h1 {
+      font-size: 42px;
+      color: rgb(255, 255, 255);
+      @media screen and (max-width: 800px) {
+        font-size: 30px;
+      }
+    }
+    h3 {
+      font-size: 22px;
+      width: 120px;
+      @media screen and (max-width: 800px) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 14px;
+      }
+    }
+  }
+  .boxContainer {
+    display: flex;
+    column-gap: 20px;
+    .box {
+      width: 200px;
+      height: 220px;
+      border-radius: 20px;
+      background-color: gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 6px;
+      @media screen and (max-width: 1000px) {
+        width: 180px;
+        height: 200px;
+      }
+      @media screen and (max-width: 800px) {
+        width: 140px;
+        height: 150px;
+        font-size: 14px;
+      }
+      @media screen and (max-width: 700px) {
+        width: 110px;
+        height: 120px;
+        font-size: 11px;
+      }
+      @media screen and (max-width: 480px) {
+      }
+      h1 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        max-width: 80%;
+        @media screen and (max-width: 700px) {
+          
+          font-size: 14px;
+        }
+      }
+    }
+    .box1 {
+      background-color: rgba(0, 102, 255, 0.04);
+      h1 {
+        color: rgb(42, 189, 255);
+      }
+    }
+    .box2 {
+      background-color: rgba(252, 114, 255, 0.12);
+      h1 {
+        color: rgb(252, 114, 255);
+      }
+    }
+    .box3 {
+      background-color: rgba(0, 195, 160, 0.06);
+      h1 {
+        color: rgb(0, 195, 160);
+      }
+    }
+  }
+}

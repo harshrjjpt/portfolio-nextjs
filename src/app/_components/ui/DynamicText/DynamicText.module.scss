@@ -1,0 +1,63 @@
+.dynamicText {
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+  margin-inline-start: 15px;
+}
+
+.dynamicText li {
+  list-style: none;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 2px 0 #fff;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+  position: relative;
+  top: 0;
+  animation: animate 12s steps(4) infinite;
+  @media screen and (max-width: 1000px) {
+    font-size: 45px;
+    line-height: 28px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 30px;
+    line-height: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 24px;
+  }
+}
+
+@keyframes animate {
+  100% {
+    top: -360px;
+  }
+}
+
+.dynamicText li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamicText li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  border-left: 2px solid #fff;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}

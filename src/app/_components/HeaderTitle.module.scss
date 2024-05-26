@@ -1,0 +1,47 @@
+.letsWorkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.perspectiveTextContainer {
+  
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: min-content;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  .perspectiveTextSubContainer {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    opacity: 1;
+    transform: perspective(620px);
+    flex: none;
+    height: auto;
+    position: relative;
+    transform: perspective(1200px);
+    white-space: pre;
+    width: auto;
+  }
+}
+.text1 {
+  font-family: "Heebo", sans-serif;
+  font-size: 22px;
+}
+.text2 {
+  font-family: "Heebo", sans-serif;
+  font-size: 50px;
+}

@@ -1,0 +1,93 @@
+.contactSubContainer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: #000000;
+  z-index: 11;
+  position: relative;
+  padding-top: 140px;
+  font-family: "Heebo", sans-serif;
+  .contactContentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10%;
+
+    .left {
+      height: 70%;
+      flex: 1;
+      .sectionTitle {
+        font-size: 50px;
+      }
+      form {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        div {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          input {
+            border: none;
+            border-bottom: 1px solid #ffffff2f;
+            background-color: transparent;
+            height: 40px;
+            &:focus{
+              outline: none;
+            }
+          }
+        }
+      }
+      button {
+        padding: 10px 30px;
+        border-radius: 8px;
+        width: 140px;
+        height: 40px;
+        border: none;
+        margin-top: 30px;
+        cursor: pointer;
+        &:hover{
+          background-color: black;
+          border: 1px solid #fff;
+          transition: 0.2s all ease-in-out;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .mapContainer {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 100%;
+          @media screen and (max-width: 2000px) {
+          }
+        }
+      }
+    }
+  }
+}
+
+.parallaxEffectImage {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  position: relative;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  h1 {
+    text-align: center;
+  }
+}

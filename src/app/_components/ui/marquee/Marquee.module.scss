@@ -1,0 +1,20 @@
+.marqueeAnimationContainer{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.marqueeItem{
+  img{
+   width: 180px;
+   height: auto;
+   padding: 20px;
+   @media screen and (max-width: 1000px) {
+    width: 130px;
+  }
+  }
+}
+.marquee2{
+  top: 43%;
+  right: 220px;
+  position: absolute !important;
+}
