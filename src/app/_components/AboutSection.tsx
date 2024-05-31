@@ -3,6 +3,7 @@ import React, { useState, Suspense, useEffect } from "react";
 import styles from "./AboutSection.module.scss";
 import { HomePageContainer } from "./ui/Container/Container.styled";
 import { Title } from "./ui/Title/Title.styled";
+import Image from 'next/image';
 import { Parallax } from "react-parallax";
 import CSVReader, { IFileInfo } from "react-csv-reader";
 
@@ -83,25 +84,23 @@ function AboutSection() {
 
   return (
     <div className={styles.aboutContainer}>
-      <div className={styles.left}>
-        <Title className={styles.sectionTitle}>ABOUT ME</Title>
-        <p>
-          Hey there, I'm Harsh, rocking the role of a Frontend Blockchain Engineer at Dapplooker. I'm all about diving
-          deep into the latest tech trends, constantly leveling up my skills to stay ahead of the curve. I'm on the hunt
-          for cutting-edge challenges in the IT realm where I can push boundaries and make a real impact. Whether it's
-          mastering Next.js, React, Angular, Redux, or delving into the intricacies of Web3, Web3.js, Ether.js, Rust,
-          Subgraphs, Substreams, and Blockchain technologies, I'm all about pushing the boundaries of what's possible in
-          the digital realm.
-        </p>
-      </div>
-      <div className={styles.right}>
-        <img
-          className={styles.aboutPic}
-          src="https://static8.depositphotos.com/1003791/928/v/450/depositphotos_9282091-stock-illustration-labyrinth-abstract-seamless-pattern.jpg"
-          alt=""
-        />
-      </div>
+    <div className={styles.left}>
+      <Title className={styles.sectionTitle}>ABOUT ME</Title>
+      <p>
+        Hey there, I&apos;m Harsh, rocking the role of a Frontend Blockchain Engineer at Dapplooker. I&apos;m all about diving deep into the latest tech trends, constantly leveling up my skills to stay ahead of the curve. I&apos;m on the hunt for cutting-edge challenges in the IT realm where I can push boundaries and make a real impact. Whether it&apos;s mastering Next.js, React, Angular, Redux, or delving into the intricacies of Web3, Web3.js, Ether.js, Rust, Subgraphs, Substreams, and Blockchain technologies, I&apos;m all about pushing the boundaries of what&apos;s possible in the digital realm.
+      </p>
     </div>
+    <div className={styles.right}>
+      <Image
+        className={styles.aboutPic}
+        src="https://static8.depositphotos.com/1003791/928/v/450/depositphotos_9282091-stock-illustration-labyrinth-abstract-seamless-pattern.jpg"
+        alt="Abstract Seamless Pattern"
+        layout="responsive" // Example property, adjust as needed
+        width={450} // Specify width
+        height={450} // Specify height
+      />
+    </div>
+  </div>
 
     // <div>
     //   <h2>CSV File Loader</h2>

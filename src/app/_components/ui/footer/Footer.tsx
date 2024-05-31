@@ -50,7 +50,7 @@ function Footer() {
                   </div>
                   <div className={styles.footerText}>
                     <p>
-                      I'm Harsh, rocking the role of a Frontend Blockchain Engineer at Dapplooker. I'm all about diving
+                      Im Harsh, rocking the role of a Frontend Blockchain Engineer at Dapplooker. Im all about diving
                       deep into the latest tech trends, constantly leveling up my skills to stay ahead of the curve.
                     </p>
                   </div>
@@ -113,7 +113,7 @@ function Footer() {
                     <h3>Subscribe</h3>
                   </div>
                   <div className={styles.footerText + " " + styles.mb25}>
-                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                    <p>Dont miss to subscribe to our new feeds, kindly fill the form below.</p>
                   </div>
                   <div className={styles.subscribeForm}>
                     <form action="#">
