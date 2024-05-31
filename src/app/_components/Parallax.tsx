@@ -15,9 +15,9 @@ function ParallaxComponent({ quote, image }: ParallaxComponentProps) {
     const updateStrength = () => {
       const width = window.innerWidth;
       if (width < 600) {
-        setStrength(-80);
+        setStrength(0);
       } else if (width < 1200) {
-        setStrength(-10);
+        setStrength(-70);
       } else {
         setStrength(-300);
       }

@@ -25,7 +25,8 @@
 }
 @media screen and (max-width: 480px) {
   .mainTitle {
-    font-size: 60px;
+    font-size: 50px;
+    letter-spacing: 0.7px;
   }
 }
 
@@ -49,7 +50,7 @@
 }
 @media screen and (max-width: 480px) {
   .scrolledMainTitle {
-    font-size: 70px;
+    font-size: 60px;
     transition: 0.5s all ease-in-out;
   }
 }

@@ -21,12 +21,8 @@
     font-size: 45px;
     line-height: 28px;
   }
-  @media screen and (max-width: 600px) {
-    font-size: 30px;
-    line-height: 20px;
-  }
   @media screen and (max-width: 480px) {
-    font-size: 24px;
+    font-size: 36px;
   }
 }
 
@@ -50,6 +46,9 @@
   background-color: #000000;
   border-left: 2px solid #fff;
   animation: typing 3s steps(10) infinite;
+  @media screen and (max-width: 480px) {
+    bottom: 1px;
+  }
 }
 
 @keyframes typing {

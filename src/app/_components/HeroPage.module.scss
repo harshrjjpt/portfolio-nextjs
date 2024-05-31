@@ -10,7 +10,9 @@
   @media screen and (max-width: 1200px) {
     width: 90%;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 720px) {
+    margin-top: 270px;
+    padding: 0px;
   }
 }
 .heroPageContainer {
@@ -19,6 +21,9 @@
   position: relative;
   column-gap: 40px;
   flex-direction: row;
+  @media screen and (max-width: 720px) {
+    flex-direction: column-reverse;
+  }
 
   .homePageShadows {
     position: absolute;
@@ -48,6 +53,9 @@
   }
   .leftSide {
     width: 60%;
+    @media screen and (max-width: 720px) {
+      width: 90%;
+    }
     .title {
       display: flex;
       flex-direction: column;
@@ -92,17 +100,16 @@
       font-size: 45px;
       line-height: 28px;
     }
-    @media screen and (max-width: 600px) {
-      font-size: 30px;
-      line-height: 20px;
-    }
     @media screen and (max-width: 480px) {
-      font-size: 24px;
+      font-size: 36px;
     }
   }
   .rightSide {
     position: relative;
     width: 40%;
+    @media screen and (max-width: 720px) {
+      width: 90%;
+    }
     div {
       width: 100%;
       position: absolute;
@@ -110,6 +117,9 @@
       top: -140px;
       @media screen and (max-width: 900px) {
         top: -95px;
+      }
+      @media screen and (max-width: 720px) {
+        top: -175px;
       }
       }
   }
