@@ -81,28 +81,16 @@ function Footer() {
                       <a href="#">about</a>
                     </li>
                     <li>
-                      <a href="#">services</a>
+                      <a href="#">Skills</a>
+                    </li>
+                    <li>
+                      <a href="#">Projects</a>
                     </li>
                     <li>
                       <a href="#">portfolio</a>
                     </li>
                     <li>
                       <a href="#">Contact</a>
-                    </li>
-                    <li>
-                      <a href="#">About us</a>
-                    </li>
-                    <li>
-                      <a href="#">Our Services</a>
-                    </li>
-                    <li>
-                      <a href="#">Expert Team</a>
-                    </li>
-                    <li>
-                      <a href="#">Contact us</a>
-                    </li>
-                    <li>
-                      <a href="#">Latest News</a>
                     </li>
                   </ul>
                 </div>
@@ -137,7 +125,7 @@ function Footer() {
               <div className={styles.colXl6 + " " + styles.colLg6 + " " + styles.textCenter + " " + styles.textLgLeft}>
                 <div className={styles.copyrightText}>
                   <p>
-                    Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a>
+                    Made with ❤️ by  <a href="">Harsh Rajput</a>
                   </p>
                 </div>
               </div>
@@ -155,7 +143,7 @@ function Footer() {
                 }
               >
                 <div className={styles.footerMenu}>
-                  <ul className={styles.ul}>
+                  {/* <ul className={styles.ul}>
                     <li>
                       <a href="#">Home</a>
                     </li>
@@ -171,7 +159,7 @@ function Footer() {
                     <li>
                       <a href="#">Contact</a>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>
