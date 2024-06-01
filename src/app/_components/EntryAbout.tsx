@@ -35,7 +35,7 @@ export default function EntryAbout({}: AboutProps) {
           </span>{" "}
         </h1>
         <p>
-          Bringing over 2 years of hands-on experience in frontend and blockchain tech. Passionate about learning and
+          Bringing over 2.5 years of hands-on experience in frontend and blockchain tech. Passionate about learning and
           tackling new challenges to create innovative digital solutions.
         </p>
       </div>
