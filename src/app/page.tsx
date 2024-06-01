@@ -41,7 +41,7 @@ export default function Home() {
       <section className={styles.mainSection}>
         <HeroPage />
       </section>
-      <ParallaxComponent quote="one" image="https://i.ibb.co/QjhSFGk/nebula-4k-teal-turquoise-wallpaper-032b333ddd19ab25df069207c82bc838-1-1.jpg" />
+      {/* <ParallaxComponent quote="one" image="https://i.ibb.co/QjhSFGk/nebula-4k-teal-turquoise-wallpaper-032b333ddd19ab25df069207c82bc838-1-1.jpg" /> */}
       <section id="about" className={styles.mainSection}>
         <AboutSection />
       </section>
@@ -57,9 +57,9 @@ export default function Home() {
       <section id="projects" className={styles.mainSection}>
         <Projects />
       </section>
-      <ParallaxComponent quote="two" image="https://i.ibb.co/RPLGzkz/eth-India-modified.jpg" />
+      {/* <ParallaxComponent quote="two" image="https://i.ibb.co/RPLGzkz/eth-India-modified.jpg" /> */}
       <section className={styles.mainSection}>
-        <Contact />
+        {/* <Contact /> */}
       </section>
       {/* <section className={styles.footerWrapper}>
         <Footer />
