@@ -3,6 +3,7 @@ import styles from "./HeroPage.module.scss";
 import { HomePageContainer } from "./ui/Container/Container.styled";
 import DynamicText from "./ui/DynamicText/DynamicText";
 import Orb3d from "./ui/Orb3d/Orb3d";
+import Orb3dAndroid from "./ui/Orb3d/Orb3dAndroid";
 
 function HeroPage() {
   return (
@@ -28,7 +29,7 @@ function HeroPage() {
         </div>
         <div className={styles.rightSide}>
           <div>
-            <Orb3d />
+            <Orb3dAndroid />
           </div>
         </div>
       </div>
