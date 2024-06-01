@@ -13,7 +13,7 @@ function Header() {
           spy={true}
           smooth={true}
           offset={50}
-          duration={500}
+          duration={1500}
           href="#home"
         >
           {" "}
@@ -25,7 +25,7 @@ function Header() {
           spy={true}
           smooth={true}
           offset={50}
-          duration={500}
+          duration={1500}
           href="#about"
         >
           {" "}
@@ -37,7 +37,7 @@ function Header() {
           spy={true}
           smooth={true}
           offset={50}
-          duration={500}
+          duration={1500}
           href="#projects"
         >
           {" "}
@@ -49,7 +49,7 @@ function Header() {
           spy={true}
           smooth={true}
           offset={50}
-          duration={500}
+          duration={1500}
           href="#experience"
         >
           {" "}
