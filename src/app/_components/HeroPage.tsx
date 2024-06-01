@@ -6,6 +6,11 @@ import Orb3d from "./ui/Orb3d/Orb3d";
 import Orb3dAndroid from "./ui/Orb3d/Orb3dAndroid";
 
 function HeroPage() {
+  const isAndroid = () => {
+    return /Android/i.test(navigator.userAgent);
+  };
+  const isAndroidDevice = isAndroid();
+
   return (
     <div className={styles.heroMainPageContainer}>
       <div className={styles.heroPageContainer}>
@@ -29,7 +34,7 @@ function HeroPage() {
         </div>
         <div className={styles.rightSide}>
           <div>
-            <Orb3dAndroid />
+          {isAndroidDevice ? <Orb3dAndroid /> : <Orb3d />}
           </div>
         </div>
       </div>
