@@ -8,10 +8,10 @@
   position: relative;
   background-color: #000000;
   padding-top: 140px;
-  @media screen and (max-width: 560px) {
+  @media screen and (max-width: 600px) {
     flex-direction: column;
     row-gap: 20px;
-    padding-top: 100px;
+    padding-top: 0px;
   }
   .titleContainer {
     display: flex;

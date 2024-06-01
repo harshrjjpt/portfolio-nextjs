@@ -19,6 +19,10 @@
     flex-direction: column-reverse;
     row-gap: 40px;
   }
+  @media screen and (max-width: 600px) {
+    position: relative;
+    top: -140px;
+  }
   .left {
     .sectionTitle {
       font-size: 42px;
