@@ -28,7 +28,7 @@ function HeroPage() {
         </div>
         <div className={styles.rightSide}>
           <div>
-            <Orb3d />
+            {/* <Orb3d /> */}
           </div>
         </div>
       </div>

@@ -1,11 +1,6 @@
 "use client";
 import React from "react";
 import styles from "./Header.module.scss";
-
-import XIcon from "@mui/icons-material/X";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import { Container } from "../Container/Container.styled";
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from "react-scroll";
 
 function Header() {
@@ -14,7 +9,7 @@ function Header() {
       <ul className={styles.menuList}>
         <Link
           activeClass="active"
-          to="test1"
+          to="home"
           spy={true}
           smooth={true}
           offset={50}
@@ -26,7 +21,7 @@ function Header() {
         </Link>
         <Link
           activeClass="active"
-          to="test1"
+          to="about"
           spy={true}
           smooth={true}
           offset={50}
@@ -38,7 +33,7 @@ function Header() {
         </Link>
         <Link
           activeClass="active"
-          to="test1"
+          to="projects"
           spy={true}
           smooth={true}
           offset={50}
@@ -50,7 +45,7 @@ function Header() {
         </Link>
         <Link
           activeClass="active"
-          to="test1"
+          to="experience"
           spy={true}
           smooth={true}
           offset={50}
@@ -61,20 +56,6 @@ function Header() {
           <li>EXPERIENCE</li>
         </Link>
       </ul>
-
-      {/* <div className={styles.rightSide}>
-        <ul>
-          <li>
-            <XIcon />
-          </li>
-          <li>
-            <LinkedInIcon />
-          </li>
-          <li>
-            <GitHubIcon />
-          </li>
-        </ul>
-      </div> */}
     </div>
   );
 }
