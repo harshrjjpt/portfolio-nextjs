@@ -45,7 +45,7 @@ function Footer() {
                 <div className={styles.footerWidget}>
                   <div className={styles.footerLogo}>
                     <a href="index.html">
-                      <h1>HARSH RAJPUT</h1>
+                      <h1 className={styles.myName}>HARSH RAJPUT</h1>
                     </a>
                   </div>
                   <div className={styles.footerText}>
@@ -71,7 +71,7 @@ function Footer() {
               <div className={styles.colXl4 + " " + styles.colLg4 + " " + styles.colMd6 + " " + styles.mb30}>
                 <div className={styles.footerWidget}>
                   <div className={styles.footerWidgetHeading}>
-                    <h3>Useful Links</h3>
+                    <h3 className={styles.myName}>Useful Links</h3>
                   </div>
                   <ul className={styles.ul}>
                     <li>
@@ -98,7 +98,7 @@ function Footer() {
               <div className={styles.colXl4 + " " + styles.colLg4 + " " + styles.colMd6 + " " + styles.mb50}>
                 <div className={styles.footerWidget}>
                   <div className={styles.footerWidgetHeading}>
-                    <h3>Subscribe</h3>
+                    <h3 className={styles.myName}>Subscribe</h3>
                   </div>
                   <div className={styles.footerText + " " + styles.mb25}>
                     <p>Dont miss to subscribe to our new feeds, kindly fill the form below.</p>
@@ -124,7 +124,7 @@ function Footer() {
             <div className={styles.row}>
               <div className={styles.colXl6 + " " + styles.colLg6 + " " + styles.textCenter + " " + styles.textLgLeft}>
                 <div className={styles.copyrightText}>
-                  <p>
+                  <p className={styles.myName}>
                     Made with ❤️ by  <a href="">Harsh Rajput</a>
                   </p>
                 </div>
