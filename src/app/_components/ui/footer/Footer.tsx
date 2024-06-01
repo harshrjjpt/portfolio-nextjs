@@ -23,7 +23,7 @@ function Footer() {
                   <i className="fas fa-phone"></i>
                   <div className={styles.ctaText}>
                     <h4>Call me</h4>
-                    <span>9311670705</span>
+                    <span>9311670605</span>
                   </div>
                 </div>
               </div>
