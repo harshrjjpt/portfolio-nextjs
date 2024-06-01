@@ -47,9 +47,9 @@ export default function Home() {
       </section>
       {/* <Entry /> */}
 
-      <section className={styles.mainSection}>
+      {/* <section className={styles.mainSection}>
         <Skills />
-      </section>
+      </section> */}
 
       <section id="experience" className={styles.mainSection}>
         <Experience />

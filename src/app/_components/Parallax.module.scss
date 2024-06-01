@@ -1,26 +1,39 @@
-.parallaxEffectImage{
-    display: flex;
-    font-family: "Heebo", sans-serif;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    z-index: 11;
-    background-color: black;
-    h1{
-      text-align: center;
-      text-wrap: nowrap;
-    }
-    .parallaxContent{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      .quote2{
-        h1{
-          font-size: 80px;
-          text-shadow: 4px 0 #fff;
-          font-weight: 900;
+.parallaxEffectImage {
+  display: flex;
+  font-family: "Heebo", sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  z-index: 11;
+  background-color: black;
+  h1 {
+    color: #fff;
+    text-align: center;
+    text-wrap: nowrap;
+  }
+  .parallaxContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .quote2 {
+      h1 {
+        font-size: 80px;
+        text-shadow: 4px 0 #fff;
+        font-weight: 900;
+        color: #fff;
+        @media screen and (max-width: 1000px) {
+          font-size: 60px;
+        }
+        @media screen and (max-width: 600px) {
+          font-size: 40px;
+          text-shadow: 2px 0 #fff;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 30px;
+          text-shadow: 1px 0 #fff;
         }
       }
     }
   }
+}
