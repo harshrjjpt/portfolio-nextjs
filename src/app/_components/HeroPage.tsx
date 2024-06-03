@@ -34,7 +34,7 @@ function HeroPage() {
         </div>
         <div className={styles.rightSide}>
           <div>
-          <Orb3d />
+          {/* <Orb3d /> */}
           {/* {isAndroidDevice ? <Orb3dAndroid /> : <Orb3d />} */}
           </div>
         </div>
