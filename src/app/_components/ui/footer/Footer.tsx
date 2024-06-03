@@ -75,22 +75,22 @@ function Footer() {
                   </div>
                   <ul className={styles.ul}>
                     <li>
-                      <a href="#">Home</a>
+                      <a href="#home">Home</a>
                     </li>
                     <li>
-                      <a href="#">about</a>
+                      <a href="#about">about</a>
                     </li>
                     <li>
-                      <a href="#">Skills</a>
+                      <a href="#skills">Skills</a>
                     </li>
                     <li>
-                      <a href="#">Projects</a>
+                      <a href="#projects">Projects</a>
                     </li>
                     <li>
-                      <a href="#">portfolio</a>
+                      <a href="#projects">portfolio</a>
                     </li>
                     <li>
-                      <a href="#">Contact</a>
+                      <a href="#contact">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -98,13 +98,13 @@ function Footer() {
               <div className={styles.colXl4 + " " + styles.colLg4 + " " + styles.colMd6 + " " + styles.mb50}>
                 <div className={styles.footerWidget}>
                   <div className={styles.footerWidgetHeading}>
-                    <h3 className={styles.myName}>Subscribe</h3>
+                    <h3 className={styles.myName}>Twitter</h3>
                   </div>
                   <div className={styles.footerText + " " + styles.mb25}>
-                    <p>Dont miss to subscribe to our new feeds, kindly fill the form below.</p>
+                    <p>Follow me on twitter for regular updates</p>
                   </div>
                   <div className={styles.subscribeForm}>
-                    <form action="#">
+                    {/* <form action="#">
                       <input
                         type="text"
                         placeholder="Email Address"
@@ -112,7 +112,7 @@ function Footer() {
                       <button>
                         <i className={"fab fa-telegram-plane " + styles.icon}></i>
                       </button>
-                    </form>
+                    </form> */}
                   </div>
                 </div>
               </div>
