@@ -1,18 +1,25 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import styles from "./HeroPage.module.scss";
-import { HomePageContainer } from "./ui/Container/Container.styled";
 import DynamicText from "./ui/DynamicText/DynamicText";
 import Orb3d from "./ui/Orb3d/Orb3d";
-import Orb3dAndroid from "./ui/Orb3d/Orb3dAndroid";
 
 function HeroPage() {
-  // const isAndroid = () => {
-  //   return /Android/i.test(navigator.userAgent);
-  // };
-  // const isAndroidDevice = isAndroid();
+  const [isAndroid, setIsAndroid] = useState(false);
+
+  useEffect(() => {
+    const checkIsAndroid = () => {
+      if (typeof navigator !== "undefined") {
+        setIsAndroid(/Android/i.test(navigator.userAgent));
+      }
+    };
+    checkIsAndroid();
+  }, []);
+
+  console.log(isAndroid)
 
   return (
-    <div className={styles.heroMainPageContainer}>
+    <div className={`${styles.heroMainPageContainer} ${isAndroid && styles.android}`}>
       <div className={styles.heroPageContainer}>
         {/* <div className={`${styles.homePageShadows} ${styles.productShadowTop}`}></div>
       <div className={`${styles.homePageShadows} ${styles.productShadowBottom}`}></div> */}
@@ -33,10 +40,18 @@ function HeroPage() {
           </div>
         </div>
         <div className={styles.rightSide}>
-          <div>
-          {/* <Orb3d /> */}
-          {/* {isAndroidDevice ? <Orb3dAndroid /> : <Orb3d />} */}
-          </div>
+          {!isAndroid ? (
+            <div className={styles.orbContainer}>
+              <Orb3d />
+            </div>
+          ) : (
+            <div className={styles.shadowContainer}>
+              <img
+                src="/shadow.png"
+                alt=""
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>
