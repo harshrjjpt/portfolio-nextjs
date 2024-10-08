@@ -74,6 +74,24 @@
   animation: 2s fadein ease-in-out forwards;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0)  {
+  .mainTitle::after {
+    top: 12px; /* Adjust only for macOS */
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1000px) {
+  .mainTitle::after {
+    top: 7px; /* Adjust only for macOS */
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 480px) {
+  .mainTitle::after {
+    top: 4px; /* Adjust only for macOS */
+  }
+}
+
 @keyframes fillup {
   from {
     background-position-x: 200%;
