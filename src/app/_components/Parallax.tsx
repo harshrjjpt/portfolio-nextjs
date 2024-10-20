@@ -9,18 +9,19 @@ interface ParallaxComponentProps {
 }
 
 function ParallaxComponent({ quote, image }: ParallaxComponentProps) {
-  const [strength, setStrength] = useState(-300);
+  const [strength, setStrength] = useState(-100);
 
   useEffect(() => {
     const updateStrength = () => {
       const width = window.innerWidth;
       if (width < 600) {
-        setStrength(0);
-      } else if (width < 1200) {
-        setStrength(-70);
-      } else {
-        setStrength(-300);
+        setStrength(-20);
       }
+      //  else if (width < 1200) {
+      //   setStrength(-70);
+      // } else {
+      //   setStrength(-300);
+      // }
     };
 
     // Set initial strength value

@@ -8,11 +8,15 @@
   background-color: black;
   @media screen and (max-width: 600px) {
     height: 450px;
-   }
+  }
   h1 {
     color: #fff;
     text-align: center;
     text-wrap: nowrap;
+    font-size: 28px;
+    @media screen and (max-width: 600px) {
+      font-size: 22px;
+    }
   }
   .parallaxContent {
     position: absolute;
