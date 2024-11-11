@@ -10,9 +10,8 @@ function Header() {
     if (typeof window !== "undefined") {
       const userAgent = navigator.userAgent.toLowerCase();
       const isMobileOrTabletUserAgent = /android|ipad|iphone|ipod|tablet|playbook|silk|kindle/.test(userAgent);
-      const isMobileOrTabletScreenSize = window.innerWidth <= 900;
 
-      setIsTablet(isMobileOrTabletUserAgent || isMobileOrTabletScreenSize);
+      setIsTablet(isMobileOrTabletUserAgent);
     }
   }
 
