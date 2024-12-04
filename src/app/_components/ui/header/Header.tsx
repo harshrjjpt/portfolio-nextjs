@@ -4,25 +4,6 @@ import styles from "./Header.module.scss";
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from "react-scroll";
 
 function Header() {
-  const [isTablet, setIsTablet] = useState(false);
-  // Move the function outside of the useEffect
-  function checkIsTablet() {
-    if (typeof window !== "undefined") {
-      const userAgent = navigator.userAgent.toLowerCase();
-      const isMobileOrTabletUserAgent = /android|ipad|iphone|ipod|tablet|playbook|silk|kindle/.test(userAgent);
-
-      setIsTablet(isMobileOrTabletUserAgent);
-    }
-  }
-
-  useEffect(() => {
-    // Run the check when the component mounts
-    checkIsTablet();
-
-    // Optionally, add a resize event listener
-    window.addEventListener("resize", checkIsTablet);
-    return () => window.removeEventListener("resize", checkIsTablet);
-  }, []);
 
   return (
     <div className={styles.headerContainer}>
@@ -50,18 +31,6 @@ function Header() {
         >
           {" "}
           <li>EXPERIENCE</li>
-        </Link>
-        <Link
-          activeClass="active"
-          to="experience"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={1500}
-          href="#experience"
-        >
-          {" "}
-          <li>{`${isTablet}`}</li>
         </Link>
       </ul>
     </div>
